@@ -14,8 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Você já se esqueceu de algumas coisas importantes para fazer? Não se preocupe, use este planejador de tarefas diarias para ajudá-lo no seu dia.  
-Adicione quantas tarefas forem possiveis de realiza-lás
+Você já se esqueceu de algumas coisas importantes para fazer? Não se preocupe, use este planejador de tarefas diarias para ajudá-lo no seu dia. Adicione quantas tarefas forem possiveis de realiza-lás!
 
 <br>
 
