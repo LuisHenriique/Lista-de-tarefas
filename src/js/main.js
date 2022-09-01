@@ -23,6 +23,8 @@ document.addEventListener('click', (e) => {
   const el = e.target
   if (el.classList.contains('deleteTask')) {
     el.parentElement.remove()
+    saveTasks()
+
   }
 })
 
@@ -46,7 +48,7 @@ const createLi = () => {
 const createButton = (li) => {
   li.innerText += ' '
   const button = document.createElement('button')
-  button.innerText = 'Delete'
+  button.innerText = 'Deletar'
   button.setAttribute('class', 'deleteTask')
   li.appendChild(button)
 
@@ -59,5 +61,35 @@ const clearInput = () => {
 }
 
 const saveTasks = () => {
+  const liTasks = ulToDoList.querySelectorAll('li')
+  const listInTasks = []
 
-}
+
+  for (let text of liTasks) {
+    let textLiTask = text.innerText
+    textLiTask = textLiTask.replace('Deletar', '').trim()
+    listInTasks.push(textLiTask)
+  }
+
+
+  transformJSONString(listInTasks)
+
+};
+
+
+const transformJSONString = (listTasks) => {
+
+  const tasksJSON = JSON.stringify(listTasks)
+  localStorage.setItem('tasks', tasksJSON)
+};
+
+const addTasksSaves = () => {
+  const tasks = localStorage.getItem('tasks')
+  const listInTasks = JSON.parse(tasks)
+
+  for (let valueTasks of listInTasks) {
+    createTask(valueTasks)
+  }
+};
+
+addTasksSaves()
