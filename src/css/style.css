@@ -41,6 +41,7 @@ main {
 h1 {
   color: #fff;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .container-tasks {
@@ -88,6 +89,14 @@ h1 {
 
   padding: 0.5rem;
   cursor: pointer;
+}
+
+.addTasks:hover,
+.deleteTask:hover {
+  background-color: #3d2c8d;
+
+  transition: 0.4s;
+  transform: scale(1.1);
 }
 
 .deleteTask {

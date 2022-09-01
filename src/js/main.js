@@ -77,7 +77,7 @@ const saveTasks = () => {
 };
 
 
-const transformJSONString = (listTasks) => {
+const transformJSONString = listTasks => {
 
   const tasksJSON = JSON.stringify(listTasks)
   localStorage.setItem('tasks', tasksJSON)
