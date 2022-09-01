@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="To-do List" src="./src/images/Capa.png" width="100%">
+  <img alt="To-do List" src="./src/images/Capa.PNG" width="100%">
 </p>
 
 ## 🚀 Tecnologias
